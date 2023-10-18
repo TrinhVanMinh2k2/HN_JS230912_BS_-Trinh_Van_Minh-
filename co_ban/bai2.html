@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // người dùng nhập chuỗi
+        let text = prompt("mời nhập chuỗi");
+        document.write(` chuỗi nhập vào: ${text} <br><br>`);
+        //biến chuỗi thành mảng
+        let arr = text.split("");
+        for (let i = 0; i < arr.length; i++) {
+            //trong mảng arr lấy kí tự đầu = viết hoa
+            arr[0]=arr[0].toUpperCase()
+            //nếu điều kiện tại i là dấu cách thì cho kí tự bên cạnh viết hoa
+            if (arr[i]== " ") {
+                arr[i+1]=arr[i+1].toUpperCase()
+            }
+        }
+        document.write(`chuỗi trả về: ${arr.join("")}`)
+    </script>
+</body>
+</html>

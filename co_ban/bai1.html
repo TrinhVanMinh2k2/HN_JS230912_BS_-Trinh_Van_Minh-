@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        ///người dùng nhập
+        let str = prompt("mời nhập chuỗi:")
+        document.write(`chuỗi ban đầu: " ${str} " <br><br>`)
+        let d = str.split("");
+        let p = '';
+        for (let i = d.length - 1; i >= 0; i--){
+            ///gán p = vị trí i-1 trong d thay bằng p
+            p += d[i];
+        }
+        console.log(p);
+        document.write(`chuỗi đảo ngược: " ${p} "`)
+    </script>
+</body>
+
+</html>
